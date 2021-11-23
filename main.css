@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/*_________________________Navegacion_______________________*/
+
+.nav{
+    background-color: #dbc278;
+    padding: 1rem;
+    
+    
+}
+
+@media screen and (min-width: 49rem){
+    .nav__list{
+        margin-left:20%;
+        margin-right: 20%;
+    
+       display:inline;
+    }
+    
+}
+
+@media screen and (min-width : 100rem) {
+    .nav__list{
+        margin-left:35%;
+        margin-right: 30%;
+    
+       display:inline;
+    }
+}
+
+.nav__list{
+    width: 100%;
+    padding: 1rem;
+
+   
+}
+.nav__brand, 
+.nav__list, 
+.nav__item{
+    display: center;
+
+}
+
+.nav__item{
+    background:darkred;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
+    
+    
+}
+
+
+.nav__brand, .nav__brand a, .nav__item, .nav__item a{
+    margin: 3.5px;
+}
+
+.nav a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+    font-size:1rem;
+
+
+}
+
+
+
+
+/* __________________________Precios-Tarjetas________________________ */
+
+.sub{
+    font-size: 0.7rem;
+    font-stretch: semi-condensed;
+    color: grey;
+    margin-top: -30px;
+}
+
+.precios{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(240, 183, 98);
+
+}
+
+.precios__item{
+    background-color: #f7f6bc;
+    display: inline-block;
+    width: 90%;
+    height: 5rem;
+    margin: 5%;
+    padding: 1rem;
+    border-radius: .2rem;
+    margin-right: auto;
+    margin-left: 20px;
+    
+
+}
+
+.precios__item h2{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.precios__item:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.2) ;
+    
+    color: rgb(0, 0, 0);
+}
+
+  
+.only-xbs{
+    display: none;
+}
+
+@media screen and (min-width: 49rem){
+    .precios__item{
+        width: 15rem;
+        height: 20rem;
+        padding: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .only-xbs{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width : 100rem) {
+    .precios{
+        max-width: 120%;
+
+    }
+    .precios__item{
+        width: 12%;
+    }
+    .only-xbs{
+        display: inline-block;
+    }
+}
+
